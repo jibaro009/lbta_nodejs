@@ -35,10 +35,10 @@ app.use("/user_create", (req,res) =>{
 
 function getConnection(){
     return mysql.createConnection({
-        host: "localhost",
-        user: "root",
-        password: "W@rld8-4",
-        database: "lbta_mysql"
+        host: "us-cdbr-iron-east-01.cleardb.net",
+        user: "b568b03df34fd4",
+        password: "dd8ea6d4",
+        database: "heroku_876ded22b090a26"
     })
 
 }
