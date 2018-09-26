@@ -83,7 +83,6 @@ app.get("/users", (req, res) => {
     // const user1 = {firstName: "Lorena", lastName: "Sabathié"}
     // const user2 = {firstName: "Jorge", lastName: "Irizarry"}
 
-    // TODO: Remember to refactor connection
     const connection = getConnection()
     const query_string = "SELECT * FROM users;"
     
@@ -101,7 +100,8 @@ app.get("/users", (req, res) => {
     // res.send("Nodemon auto updates when I save this file")
 })
 
+const PORT = process.env.PORT || 3003
 // localhost:3003
-app.listen(3003, () => {
-    console.log("Server is up an listening on 3003...")
+app.listen(PORT, () => {
+    console.log("Server is up an listening on: " + PORT + " ...")
 })
