@@ -14,7 +14,7 @@ app.use(express.static('./public'))
 
 app.use(morgan('short'))
 
-app.use("/user_create", (req,res) =>{
+app.use("/user_create", (req, res) =>{
     // console.log("Trying to create a new user...")
     // console.log("How do we get the form data???")
     // console.log("First name: " + req.body.create_first_name)
